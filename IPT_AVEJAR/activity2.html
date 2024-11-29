@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section with logo and text -->
+        <div class="left-section">
+            <div class="logo">
+                <div class="circle"></div>
+                <p>COFFEE SHOP</p>
+            </div>
+            <div class="text-box">
+                <p>Text here</p>
+            </div>
+        </div>
+
+        <!-- Right section with shop content -->
+        <div class="right-section">
+            <h1>VISIT OUR SHOP</h1>
+            <div class="buttons">
+                <button class="nav-button">&lt; Button</button>
+                <button class="main-button">LET'S EXPLORE</button>
+                <button class="nav-button">Button &gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left-section {
+    background-color: #444;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    background-color: #32CD32; /* Light green */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.text-box {
+    background-color: #666;
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.right-section {
+    background-color: #333;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button, .main-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button {
+    background-color: #FF8C00; /* Orange */
+}
+
+.main-button {
+    background-color: #FF8C00; /* Orange */
+    font-size: 18px;
+    padding: 15px 30px;
+}
 
